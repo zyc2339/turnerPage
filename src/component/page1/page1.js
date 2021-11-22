@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
 import Footer from "./Footer";
@@ -6,7 +8,7 @@ import Header from "./Header";
 export default function Page1() {
   return (
     <>
-      <div className="page1-body-grid">
+      <div className="page-body-grid">
         <div className="page1-body-grid-item page1-section1">
           <Header />
           <div className="page1-body-grid-item1-card">
@@ -20,7 +22,9 @@ export default function Page1() {
             <div className="icon-container">
               <FontAwesomeIcon icon={faShoppingBag} className="icon1" />
               <FontAwesomeIcon icon={faShoppingBag} className="icon1" />
-              <FontAwesomeIcon icon={faShoppingBag} className="icon1" />
+              <Link to="/insurance">
+                <FontAwesomeIcon icon={faShoppingBag} className="icon1" />
+              </Link>
             </div>
           </div>
         </div>
